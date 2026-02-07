@@ -28,10 +28,13 @@ function App() {
     setMessage("");
     setLoading(true);
 
+
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
+
+
     try {
-      const res = await axios.post("http://localhost:5000/api/chat", {
-        message,
-      });
+      const res = await axios.post(`${BACKEND_URL}/api/chat`, { message });
 
       const botMessage = {
         role: "bot",
