@@ -87,6 +87,12 @@ const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
         />
         <button onClick={sendMessage}>Send</button>
       </div>
+
+        <div className="footer">
+  Developed by Md Zafiruddin Danish 😎
+</div>
+
+
     </div>
   );
 }
